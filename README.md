@@ -89,19 +89,19 @@ def methylation_bedgraph_visualizer(filename):
 ```
 Результат
 #### 8 cell
-![8 cell]() 
+![8 cell](https://github.com/ytken/hse_hw1_meth/blob/main/img_meth/meth_8cell.png) 
 #### ICM
-![ICM]() 
+![ICM](https://github.com/ytken/hse_hw1_meth/blob/main/img_meth/meth_ICM.png) 
 #### Epiblast
-![Epiblast]() 
+![Epiblast](https://github.com/ytken/hse_hw1_meth/blob/main/img_meth/meth_epiblast.png) 
 
 ### 2f
 Визуализируем уровень метилирования и покрытия для каждого образца с помощью pyGenomeTracks. 
 
 Полные треки
-
+![](https://github.com/ytken/hse_hw1_meth/blob/main/img_cov/image_cov.png) 
 Приближен наиболее интересный участок
-
+![](https://github.com/ytken/hse_hw1_meth/blob/main/img_cov/image_cov_enlarged.png) 
 
 
 
