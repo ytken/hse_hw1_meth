@@ -17,6 +17,8 @@ Epiblast | SRR3824222 | стадия эпибласта, примерно 6.5 д
 ## Выполнение
 
 ### 1
+Сравним анализ прочтений epyblast и примера RNA-Seq секвенирования с индексом SRR3414631 (семестр 3 дз 3). Оба результата получены по Mus musculus (домашняя мышь).
+![SRR3414631](https://github.com/ytken/hse_hw1_meth/blob/main/fastqc/ENA_SRR3414631.png) 
 
 
 
@@ -94,6 +96,12 @@ def methylation_bedgraph_visualizer(filename):
 ![ICM](https://github.com/ytken/hse_hw1_meth/blob/main/img_meth/meth_ICM.png) 
 #### Epiblast
 ![Epiblast](https://github.com/ytken/hse_hw1_meth/blob/main/img_meth/meth_epiblast.png) 
+Заметим, что наиболее неравномерное распределение метилированных цитозинов для образцов 8 cell. Чуть меньше половины не метилированные, 
+около четверти полностью метилированные и в остальном видно нормальное распределение с пиком в 50% метилирования. Для образцов ICM с вероятностью 0.65 встретятся
+не метилированные, а также заметны максимумы в 50% и 100% частотой 0.1 . Для epiblast наибольшая вероятность ~0.47 встречи полностью метилированного образца, но также
+есть вероятность ~0.12 встретить не метилированный.
+
+Тенденция волн CpG деметилирования-метилирования наблюдается, но есть также и отклонения, которые нельзя отбросить.
 
 ### 2f
 Визуализируем уровень метилирования и покрытия для каждого образца с помощью pyGenomeTracks. 
@@ -102,6 +110,3 @@ def methylation_bedgraph_visualizer(filename):
 ![](https://github.com/ytken/hse_hw1_meth/blob/main/img_cov/image_cov.png) 
 Приближен наиболее интересный участок
 ![](https://github.com/ytken/hse_hw1_meth/blob/main/img_cov/image_cov_enlarged.png) 
-
-
-
